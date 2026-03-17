@@ -140,8 +140,15 @@ footer {
     margin-top: 2rem;
 }
 
-.footer-links {
-    margin-bottom: 1rem;
+.footer-links a {
+    display: inline-flex;      /* Puts the icon and text side-by-side */
+    align-items: center;       /* Centers them vertically */
+    gap: 0.4rem;               /* Adds a tiny gap between the icon and the text */
+    color: #3498db;            /* Your default link color */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .footer-links a {
@@ -240,6 +247,24 @@ footer {
 .stat-error {
     color: #a0aab2;
     font-weight: normal;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #14161a; /* Matches your header/footer */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #232730; /* Matches your project cards */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3498db; /* Your blood red accent color! */
 }
 
 
