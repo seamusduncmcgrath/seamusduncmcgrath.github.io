@@ -32,7 +32,17 @@ header {
     align-items: center;
 }
 
-h1, h2, h3 {
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.5px;
+    background: linear-gradient(0deg, #2980b9, #e6e6ea);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+h2, h3 {
     /* Uses the coding font for titles to give a tech vibe */
     font-family: 'JetBrains Mono', monospace;
     letter-spacing: -0.5px; /* Pulls the letters slightly closer together */
