@@ -6,21 +6,36 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1d24; /* Soft dark slate */
+    font-family: 'Inter';
+    background: linear-gradient(135deg, #050505, #121d4a);
+    background-attachment: fixed;
+    min-height: 100vh;
     color: #e6e6ea; /* Off-white for comfortable reading */
     line-height: 1.6;
 }
 
 /* 2. HEADER & NAVIGATION */
 header {
-    background-color: #14161a; /* Slightly darker than the main background */
+    background: rgba(20, 22, 26, 0.7);
+    backdrop-filter: blur(12px); /* The glass effect */
+    -webkit-backdrop-filter: blur(12px); /* For Safari compatibility */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
     color: white;
     padding: 1.5rem 2rem;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+}
+
+h1, h2, h3 {
+    /* Uses the coding font for titles to give a tech vibe */
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.5px; /* Pulls the letters slightly closer together */
 }
 
 nav a {
@@ -58,15 +73,18 @@ section {
 /* Remove the margin-top and max-width from your existing .project-tile since the Grid handles it now */
 .project-tile {
     background-color: #232730; /* Lighter slate to stand out from the background */
+    border: 1px solid transparent;
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Stronger, darker shadow */
     transition: transform 0.2s ease; /* We will use this for a cool hover effect! */
 }
-
+ 
 /* Let's add a hover effect so the card lifts up when you mouse over it */
 .project-tile:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.2); /* Subtle blue glow */
+    border: 1px solid rgba(52, 152, 219, 0.3); /* Subtle blue border */
 }
 
 .project-tile img {
@@ -91,6 +109,16 @@ section {
 
 .project-tile a:hover {
     background-color: #2980b9;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
 }
 
 /* 5. FOOTER */
@@ -178,6 +206,30 @@ footer {
 
 .repo-button:hover {
     background-color: #2980b9;
+}
+
+.repo-stats {
+    display: flex;
+    gap: 1rem; /* Spaces out the stars and forks */
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.05); /* Subtle dark container */
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #3498db; /* Ties into your existing accent color */
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.stat-error {
+    color: #a0aab2;
+    font-weight: normal;
 }
 
 

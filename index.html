@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta property="og:title" content="Seamus McGrath">
+<meta property="og:description" content="Portfolio of a C++ developer specializing in Xbox 360 era reverse engineering and 7th-gen game mods.">
+<meta property="og:image" content="https://raw.githubusercontent.com/seamusduncmcgrath/seamusduncmcgrath.github.io/images/favicon.png">
+<meta property="og:url" content="https://seamusduncmcgrath.github.io/">
+<meta name="theme-color" content="#b30000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamus McGrath</title>
     <link rel="icon" type="image/png" href="images/favicon1.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seamus McGrath</title>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seamus McGrath</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    </head>
 <body>
+
 
     <header>
         <h1>Seamus McGrath</h1>
@@ -24,41 +28,52 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="glass">
             <h2>About Me</h2>
-            <p>Hi, I'm a modder with a passion for the Dying Light and Dead Island games with experience in C++ and reverse engineering.</p>
+            <p>Hi, I'm a 16 year old developer based in Australia who has a passion for reverse engineering older 7th-gen games and C++. I have created many mods for games and am a engine specialist for Dying Light 2: The Outcast. TODO: Fix up this about me</p>
         </section>
 
         <section id="featured-projects">
             <h2>Featured Work</h2>
             
             <div class="project-grid">
-                
+            
                 <div class="project-tile">
-                    <img src="images/1449-1770092892-1160486613.webp" alt="random">
-                    <h3>Dying Light And DI(R)DE Mod Loader</h3>
-                    <p>A lightweight PAK & RPACK loader for Dying Light and Dead Island Definitive Edition made in C++..</p>
-                    <a href="https://www.nexusmods.com/dyinglight/mods/1449">View Code</a>
-                </div>
-
-                <div class="project-tile">
-                    <img src="images/keyart.jpg" alt="blah">
-                    <h3>Chrome Engine 5 Community DevTools</h3>
-                    <p>A comprehensive desktop application featuring a Texture Editor, Script Editor, Varlist Editor, and Map Script Editor that works for all games on Chrome Engine 5..</p>
-                    <a href="#">View Code</a>
-                </div>
-
-                <div class="project-tile">
-                    <img src="images/dwlogo1.png" alt="Another Tool">
+                    <img src="images/dwlogo1.png" alt="Dying Light Restoration Project Logo">
                     <h3>Dying Light Restoration Project</h3>
-                    <p>A large mod for dying light with a focus on restoring cut content from the game.</p>
-                    <a href="https://www.nexusmods.com/dyinglight/mods/1419">View Code</a>
+                    <p>A large mod for Dying Light with a focus on restoring cut content from the game.</p>
+                    <div class="repo-stats">
+                    <img src="https://img.shields.io/badge/Downloads-885-1a1d24?style=for-the-badge&labelColor=232730&logo=nexusmods" alt="Nexus Downloads">
+                    <img src="https://img.shields.io/badge/Endorsements-17-1a1d24?style=for-the-badge&labelColor=232730&logo=nexusmods" alt="Nexus Endorsements">
+                    </div>
+                    <a href="https://www.nexusmods.com/dyinglight/mods/1419">View on Nexus</a>
                 </div>
 
                 <div class="project-tile">
-                    <h3>RP5L Extractor</h3>
-                    <p>A extractor for the .rpack file's used in Dead Island and Call Of Juarez The Cartel.</p>
-                    <a href="#">View Code</a>
+                    <img src="images/outcast.png" alt="outcast">
+                    <h3>Dying Light 2: The Outcast</h3>
+                    <p>"The Outcast" - a complex mod for Dying Light 2 which aims to restore as much content from 2019 as possible. It includes big changes in graphics/postprocessing, gameplay, weather, UI/UX, NPC models, parkour and textures. I work as a engine specialist on this project</p>
+                    <div class="repo-stats">
+                    <img src="https://img.shields.io/badge/Downloads-16,972-1a1d24?style=for-the-badge&labelColor=232730&logo=nexusmods" alt="Nexus Downloads">
+                    <img src="https://img.shields.io/badge/Endorsements-143-1a1d24?style=for-the-badge&labelColor=232730&logo=nexusmods" alt="Nexus Endorsements">
+                    </div>
+                    <a href="https://www.nexusmods.com/dyinglight/mods/14">View on Nexus</a>
+                </div>
+
+                <div class="project-tile" data-repo="seamusduncmcgrath/CE6-PAK-Loader">
+                    <img src="images/1449-1770092892-1160486613.webp" alt="Dying Light Mod Tool Logo">
+                    <h3>Dying Light And DI(R)DE Mod Loader</h3>
+                    <p>A lightweight PAK & RPACK loader for Dying Light and Dead Island Definitive Edition made in C++.</p>
+                    <div class="repo-stats"></div> 
+                    <a href="https://github.com/seamusduncmcgrath/CE6-PAK-Loader">View Code</a>
+                </div>
+
+                <div class="project-tile" data-repo="seamusduncmcgrath/Far-Cry4-Custom-Client">
+                    <img src="images/FC4.jpg" alt="FC4">
+                    <h3>Far Cry 4 Custom Client</h3>
+                    <p>A reverse engineered executable for Far Cry 4 with custom mod loading support.</p>
+                    <div class="repo-stats"></div> 
+                    <a href="https://github.com/seamusduncmcgrath/Far-Cry4-Custom-Client">View Code</a>
                 </div>
 
             </div> </section>
@@ -71,7 +86,9 @@
             <a href="mailto:seamus.dunc.mcgrath@gmail.com">Email</a>
         </div>
         <p>&copy; 2026 Seamus McGrath. All rights reserved.</p>
+        <p>No I did not vibecode this</p>
     </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
